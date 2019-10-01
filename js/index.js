@@ -8,6 +8,16 @@ logo.addEventListener('mouseout', () => {
   logo.style.backgroundColor= "white";
 });
 
+// Logo Red on dblclick
+logo.addEventListener('dblclick', function (e) {
+  logo.style.backgroundColor= "red";
+});
+
+// Home focus
+const home = document.querySelector("#home");
+home.addEventListener('focus', function (e) {
+  home.style.background = 'pink'; 
+});
 
 // Alert on Keypress
 const noKey = document.querySelector('body');
